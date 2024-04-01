@@ -2,14 +2,123 @@
  "cells": [
   {
    "cell_type": "code",
+   "execution_count": 1,
+   "id": "a81b3311-034f-4c42-80d1-2290ebb439be",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "輸入四00個數字： 1234\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1234: 0A1B\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "輸入四00個數字： 4567\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "4567: 2A2B\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "輸入四00個數字： 4756\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "4756: 2A2B\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "輸入四00個數字： 4657\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "4657: 1A3B\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "輸入四00個數字： 7564\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "7564: 1A3B\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "輸入四00個數字： 4576\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "4576: 4A0B\n",
+      "答對了！\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"Bc0210022施崴鈞\")\n",
+    "import random\n",
+    "answer = random.sample(range(1, 10), 4)\n",
+    "a = b = n = 0\n",
+    "while a!=4:\n",
+    "    a = b = n = 0\n",
+    "    user = list(input('輸入四00個數字：'))\n",
+    "    for i in user:\n",
+    "        if int(user[n]) == answer[n]:\n",
+    "            a += 1\n",
+    "        else:\n",
+    "            if int(i) in answer:\n",
+    "                b += 1\n",
+    "        n += 1\n",
+    "    output = ','.join(user).replace(',','')\n",
+    "    print(f'{output}: {a}A{b}B')\n",
+    "print(\"答對了！\")"
+   ]
+  },
+  {
+   "cell_type": "code",
    "execution_count": null,
-   "id": "bfa57be0-66e7-466e-9528-4cfd3be02695",
+   "id": "bd41d7c5-4d3c-48e2-ad3d-a56f0dec7cc4",
    "metadata": {},
    "outputs": [],
-   "source": [
-    "print(\"ID: 123456789\")\n",
-    "print(\"1A2B 作業真簡單\")"
-   ]
+   "source": []
   }
  ],
  "metadata": {
